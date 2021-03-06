@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Form</title>
+	<link rel="icon" type="text/css" href="sona.png">
+	<link rel="stylesheet" type="text/css" href="b1.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Dancing+Script:wght@667&display=swap" rel="stylesheet">
+	<script type="text/javascript">
+			function cgpaValues() {
+				// body...
+				var num1,num2,num3,res;
+				num1=parseInt(document.getElementById('num1').value);
+				num2=parseInt(document.getElementById('num2').value);
+				num3=parseInt(document.getElementById('num3').value);
+				num1=num1/2;
+				num2=num2/4;
+				num3=num3/4;	
+				res=num1+num2+num3;	
+				var r;		
+				document.getElementById('result').value = res;
+				if (res)
+					window.alert("CGPA Calculated");
+				else
+					window.alert("CGPA is not calculated");
+
+			}
+				
+			function reg(){
+
+		
+			var sname,fname,mname,num,email,result,email1,num1;
+
+			sname=document.sona.sname.value;
+			fname=document.sona.fname.value;
+			mname=document.sona.mname.value;
+			email=document.sona.email.value;
+			email1=document.sona.email1.value;
+			num=document.getElementById('num').value;
+			mob1=document.getElementById('mob1').value;
+			result=document.getElementById('result').value;
+
+				var sn,f,m,numb,e,r,e1,ph1;
+
+				var namepattern=/^[a-zA-Z ]+$/;
+
+					window.alert("TP");
+
+				if(namepattern.test(sname))
+				{
+					sn=true;
+					window.alert("name is acceptable");
+				}
+				else
+				{
+					sn=false;
+					window.alert("name is not acceptable");
+				}
+
+				if(namepattern.test(fname))
+				{
+					f=true;
+				}
+				else
+				{
+					f=false;
+				}
+
+				if(f)
+					window.alert("fname is acceptable");
+				else
+					window.alert("fname is not acceptable");
+
+				if(namepattern.test(mname))
+				{
+					m=true;
+				}
+				else
+				{
+					m=false;
+				}
+
+				if(m)
+					window.alert("mname is acceptable");
+				else
+					window.alert("mname is not acceptable");
+
+
+         		var mobilepattern=/^[0-9]{10}$/;
+
+         		 if(mobilepattern.test(num))
+         		 {
+          		      numb=true;
+         		 }
+         		 else
+         		 {
+         	 	    numb=false;
+         		 }
+
+         		 if(numb)
+         		 	window.alert("Student Mobile number is acceptable");
+        		  else
+         		 	window.alert("Student Mobile number is not acceptable");
+
+         		 if(mobilepattern.test(mob1))
+         		 {
+          		      ph1=true;
+         		 }
+         		 else
+         		 {
+         	 	      ph1=false;
+         		 }
+
+         		  if(ph1)
+         		 	window.alert("Parent Mobile number is acceptable");
+        		  else
+         		 	window.alert("Parent Mobile number is not acceptable");
+
+ 				if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(sona.email.value))
+  				{
+   					 e=true;
+ 				}
+    			else{
+   					e=false;
+    			}
+			    if(e)
+			    	window.alert("Student Email is acceptable");
+			    else
+			    	window.alert("Student Email is not acceptable");
+
+			    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(sona.email1.value))
+  				{
+   					 e1=true;
+ 				}
+    			else{
+   					e1=false;
+    			}
+			    if(e1)
+			    	window.alert("Parent Email is acceptable");
+			    else
+			    	window.alert("Parent Email is not acceptable");
+
+			    if (result>130) {
+					r=true;	
+					window.alert("The applicant is eligible");				
+				}
+				else{
+					r=false;
+					var r1 = "**Applicant is not eligible";
+					document.getElementById('result').value = r1;
+				}
+
+			    if(sn && f && m && numb && e && r && ph1 && e1 )
+			    window.alert("Registered Successfully😁😁");
+			    else
+			    window.alert("Validation Failed😢😢");
+				}
+		</script>
+	</head>
+<body>
+	<h1 style=" color: #a9e2f3 ; text-shadow: 6px 6px 6px #688a08;font-family:'New Rocker'; font-style: italic;"></h1><br>
+	<div class="register" id="eresult" style="color: red;">
+		<form name="sona" method="post" id="register">
+		<h2 align="center"style="color: white;font-family: 'Times New Roman', cursive; font-size: 42px;">Register here..!</h2><br>
+		<label>Name  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;:</label>
+		<input type="text" name="sname" id="name"style="font-style: italic ;"placeholder required><br><br>
+		<label>Father Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+		<input type="text" name="fname" id="name" style="font-style: italic;" placeholder required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;
+		<label>Mother Name  &nbsp;&nbsp;:</label>
+		<input type="text" name="mname" id="name"style="font-style: italic;"placeholder required><br><br>
+		<label>Gender&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;:</label>
+		<select id="gen" name="gender"required>
+			<option selected hidden value="">--select--</option>
+			<option value="ind">male</option>
+			<option value="pak">female</option>
+		</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<label>Community&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;:</label>
+		<select id="com" name="gender"required>
+			<option selected hidden value="">--select--</option>
+			<option value="ind">BC</option>
+			<option value="pak">MBC</option>
+			<option value="ind">OC</option>
+			<option value="ind">SC</option>
+		</select><br><br>
+		<label>10th Mark &ensp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+		<input type="text" name="noa" id="noa"style="font-style: italic;" placeholder="Marks out of 500"required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+		<label>11th Mark &ensp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+		<input type="text" name="noa" id="noa"style="font-style: italic;" placeholder="Marks out of 600"required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<label>12th Mark &nbsp;&nbsp;:</label>
+		<input type="text" name="noc" id="noc"style="font-style: italic;" placeholder="Marks out of 600"required><br><br>
+		<label>Physics&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+		<input type="text" name="phy" id="num2" style="font-style: italic;"placeholder="Marks out of 200"required>&nbsp;&nbsp;&nbsp;
+		<label>Chemistry&emsp;&nbsp;&nbsp;:</label>
+		<input type="text" name="chem" id="num3"style="font-style: italic;" placeholder="Marks out of 200"required>&nbsp;&nbsp;&nbsp;&nbsp;;
+		<label>Maths&nbsp;&nbsp;:</label>
+		<input type="text" name="mat" id="num1"style="font-style: italic;" placeholder="Marks out of 200"required><br><br>
+		<label style="font-style: italic"> CGPA &nbsp;&nbsp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+
+		<input type="text" id="result" style="font-style: italic;" placeholder="Marks out of 200" class="text-danger font-weight-bold"></input><span id="result" class="text-danger font-weight-bold"></span>&nbsp;&nbsp;&nbsp;
+		<input type="button" style="background-color: blue; font-style: italic;" value="calcuate" onclick ="cgpaValues()" name="calcuate" id="btn2"></input>
+		<p id="result"></p>
+		<label>Program's &ensp;&emsp;&nbsp;:</label>
+		<select name="r" id="hn" style="font-style: italic;"required>
+			<option selected hidden value="">--select--</option>
+			<option value="sd">Information Technology</option>
+			<option value="ud">Computer Science</option>
+			<option value="md">Electrical Communication Engineering</option>
+		</select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&ensp;<br><br>
+		<label>Student Mobile :</label>
+		<input type="text" name="num" id="num" style="font-style: italic;" placeholder="Enter the Student No."required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<label>Parent Mobile number &nbsp;:</label>
+		<input type="text" name="mob1" id="mob1" style="font-style: italic;" placeholder="Enter the Parent No."required><br><br>
+		<label>Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;:</label>
+		<input type="text" name="email" id="ename"style="font-style: italic;" placeholder="Enter Your Email"required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<label>Email :</label>
+		<input type="text" name="email1" id="ename"style="font-style: italic;" placeholder="Enter Your Parent Email"required>
+		<br><br><br><br>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input style="background-color:red; font-style: italic;" type="button" value="submit" name="register_btn" id="btn1" onclick="reg()"></input>
+		</form> 
+	</div>
+</body>

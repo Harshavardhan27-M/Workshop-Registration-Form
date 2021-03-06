@@ -1,0 +1,121 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image: url(register1.jpg);
+	background-size: 150% auto;
+	background-repeat: no-repeat;
+	opacity: 10;
+}
+h1{
+	text-align: center;
+	padding: 20px;
+}
+h2{
+	text-align: center;
+	padding: 20px;
+}
+.register{
+	width: 1480px;
+	margin: 0px 0px 0px 20px;
+	color: white;
+	font-size: 18px;
+	padding: 20px;
+	border-radius: 10px;
+	background-color:rgba(0, 0, 0, 0.6);
+	opacity: 0.8;
+	}
+#register{
+	margin-left: 30px;
+}
+label{
+	font-family: 'serif';
+	font-size: 24px;
+	font-weight: 800;
+	font-style: italic;
+	color: white 
+}
+
+#name,#date,#noa,#noc,#cd,#num1,#num2,#result{
+	width: 323px;
+	border: none;
+	border-radius: 3px;
+	outline: 0;
+	padding: 7px;
+}
+#qc{
+	border: none;
+	border-radius: 3px;
+	outline: 0;
+	padding: 7px;
+}
+#ename{
+	width:323px;
+	border: none;
+	border-radius: 3px;
+	outline: 0;
+	padding: 7px;
+}
+#ph{
+	width: 65px;
+	padding: 7px;
+	border: none;
+	outline: 0;
+	border-radius: 3px;
+	outline: 0;
+}
+#rt,#hn,#rn,#gen,#com{
+	width: 323px;
+	padding: 7px;
+	border: none;
+	border-radius: 3px;
+	outline: 0;
+}
+#date{
+	width: 323px;
+	padding: 7px;
+	border: none;
+	border-radius: 3px;
+	outline: 0;
+}
+#num,#roompty,#mob1{
+	width: 323px;
+	padding: 7px;
+	border: none;
+	border-radius: 3px;
+	outline: 0;
+}
+#sub,#res,#bac{
+	width: 323px;
+	padding: 7px;
+	font-size: 16px;
+	font-family: sans-serif;
+	font-style: bold;
+	font-weight: 600;
+	border: none;
+	border-radius: 3px;
+	outline: 0;
+
+}
+#btn,#btn1{
+	width: 323px;
+	border: none;
+	border-radius: 3px;
+	outline: 0;
+	padding: 7px;
+}
+#num3{
+	width: 240px;
+	padding: 7px;
+	border: none;
+	border-radius: 3px;
+	outline: 0;
+}
+#btn2{
+	width: 150px;
+	border: none;
+	border-radius: 3px;
+	outline: 0;
+	padding: 7px;
+}
