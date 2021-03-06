@@ -1,2 +1,2 @@
 # Workshop-Registration-Form
-It is used for the  registration of some workshops and more
+It is used for the  registration of workshops
